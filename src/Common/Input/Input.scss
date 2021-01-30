@@ -1,0 +1,47 @@
+@import '../../Styles/Settings';
+
+$label-font-size: 0.8rem;
+$label-top-position: 0.4rem;
+$label-left-position: 0.4rem;
+
+.Input {
+  border: 1px solid lightgrey;
+  border-radius: 0.25rem;
+  padding: calc(#{0.5rem + $label-font-size} + #{$label-top-position}) #{$label-left-position}
+    0.5rem #{$label-left-position};
+  width: 100%;
+  font-size: 16px;
+  background: white;
+
+  &:active,
+  &:focus {
+    border-color: darkgray;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  &-container {
+    position: relative;
+  }
+
+  &-invalid {
+    background: $color-error-light;
+  }
+  &-error-msg {
+    position: absolute;
+    top: calc(100% + #{$label-top-position});
+    left: $label-left-position;
+    right: $label-left-position;
+    z-index: 2;
+    background: white;
+    border-top: none;
+    font-size: 0.8rem;
+    color: $color-error;
+  }
+  &-label {
+    font-size: 0.8rem;
+    top: $label-top-position;
+    left: $label-left-position;
+    position: absolute;
+    font-style: italic;
+  }
+}

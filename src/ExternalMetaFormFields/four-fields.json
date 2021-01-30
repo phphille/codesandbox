@@ -1,0 +1,49 @@
+{
+  "fields": {
+    "email": {
+      "regex": "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$",
+      "regexErrorMsg": "Invalid email address",
+      "flags": "i",
+      "required": true,
+      "label": "E-mail",
+      "id": "email",
+      "name": "email",
+      "type": "email",
+      "initialValue": ""
+    },
+    "name": {
+      "regex": "^\\D{1,}$",
+      "regexErrorMsg": "Digits are not allowed",
+      "flags": "",
+      "required": true,
+      "label": "Name",
+      "id": "name",
+      "name": "name",
+      "type": "text",
+      "initialValue": ""
+    },
+    "nickname": {
+      "regex": "^\\D{1,}$",
+      "regexErrorMsg": "Digits are not allowed",
+      "flags": "",
+      "required": true,
+      "label": "Nickname",
+      "id": "nickname",
+      "name": "nickname",
+      "type": "text",
+      "initialValue": ""
+    },
+    "phone": {
+      "regex": "^(^$)|(^\\d{5,}$)",
+      "regexErrorMsg": "Only numbers is allowed and at least 5 digits long",
+      "flags": "",
+      "required": false,
+      "label": "Phone (optional)",
+      "id": "phone",
+      "name": "phone",
+      "type": "number",
+      "initialValue": ""
+    }
+  },
+  "id": "4"
+}

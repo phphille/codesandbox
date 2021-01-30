@@ -1,0 +1,18 @@
+@import '../Styles/Settings';
+
+.FormStateInfo {
+  &-error-msg,
+  &-success-msg {
+    padding: 1rem;
+  }
+
+  &-error-msg {
+    background: $color-error-light;
+    color: $color-error;
+  }
+
+  &-success-msg {
+    background: $color-success-light;
+    color: $color-success;
+  }
+}

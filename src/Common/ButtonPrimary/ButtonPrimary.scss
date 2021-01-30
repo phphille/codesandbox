@@ -1,0 +1,14 @@
+@import '../../Styles/Settings';
+
+.ButtonPrimary {
+  color: white;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  background: rgb(38, 67, 101);
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+}

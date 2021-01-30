@@ -1,0 +1,14 @@
+@import '../Styles/Settings';
+
+.Form {
+  & > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  &-path {
+    fill: currentColor;
+  }
+  &-svg {
+    margin-left: 0.7rem;
+  }
+}
